@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functionaliteit 1.3 level 1</title>
+</head>
+<body>
+	<!-- javascript code -->
+	<script>
+	var gebruikersnaam
+	var wachtwoord
+		gebruikersnaam = prompt("Gebruikersnaam?");
+		wachtwoord = prompt("Wachtwoord?");
+		if (gebruikersnaam != "meltemozgenc" && wachtwoord =="wachtwoord"){
+			alert("Verkeerde gebruikersnaam");
+		}
+		else if (gebruikersnaam == "meltemozgenc" && wachtwoord != "wachtwoord"){
+			wachtwoord = prompt("Verkeer wachtwoord, voer het juiste wachtwoord in.")
+			if (gebruikersnaam == "meltemozgenc" && wachtwoord != "wachtwoord") {
+				wachtwoord = prompt("Verkeer wachtwoord, voer het juiste wachtwoord in.")
+			};
+		}
+			
+		else if(gebruikersnaam == "meltemozgenc" && wachtwoord == "wachtwoord"){
+			alert("U bent ingelogd!");
+		}
+		else{
+			alert("Verkeerd gebruikersnaam en wachtwoord!")
+		}
+	</script>
+</body>
+</html>

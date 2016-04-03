@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opgave 1</title>
+</head>
+<body>
+	<!-- javascript code -->
+	<script>
+	var aankoopbedrag
+	var inclbezorgkosten
+		aankoopbedrag = prompt("Wat is het aankoopbedrag?");
+		//parseFloat maakt tekst een kommagetal!
+		aankoopbedrag = parseFloat(aankoopbedrag);
+		inclbezorgkosten = aankoopbedrag + 3.95;
+		if(aankoopbedrag >= 25.00){
+			alert("Het totaalbedrag is " + aankoopbedrag + "euro. Je bestelling word gratis bezorgd!");
+		}
+		else{
+			alert("Het totaalbedrag incl. bezorgkosten is " + inclbezorgkosten + " euro.");
+		}
+	</script>
+</body>
+</html>
